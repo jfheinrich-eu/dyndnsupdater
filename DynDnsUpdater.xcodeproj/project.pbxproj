@@ -63,7 +63,6 @@
 		CB7988F528F487E10035F186 /* DynDnsUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynDnsUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7988F828F487E10035F186 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CB80656928F87679008A9A92 /* libDynDnsUpdaterLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDynDnsUpdaterLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB80657828F8807D008A9A92 /* DynDnyUpdaterLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DynDnyUpdaterLib; sourceTree = "<group>"; };
 		CBAA781A28F52FAE003A43BB /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
 		CBAA781C28F52FDD003A43BB /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +146,6 @@
 		CB7988EC28F487E10035F186 = {
 			isa = PBXGroup;
 			children = (
-				CB80657828F8807D008A9A92 /* DynDnyUpdaterLib */,
 				CB7988F728F487E10035F186 /* DynDnsUpdater */,
 				CB07E2FB28F5B709000D907E /* DynDnsUpdaterUI */,
 				CB07E30D28F5B70A000D907E /* DynDnsUpdaterUITests */,

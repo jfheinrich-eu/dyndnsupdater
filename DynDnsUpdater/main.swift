@@ -6,12 +6,15 @@
 //
 
 import Foundation
+import DynDnyUpdaterLib
 
-
+var dynDnsUpdater = DynDnyUpdaterLib()
 
 signal(SIGINT) {
     theSignal in
-    Updater().writeToStderr("application interrupted -- halting")
+    dynDnsUpdater.
+    
+        .writeToStderr("application interrupted -- halting")
         exit(EXIT_FAILURE)
 }
 
