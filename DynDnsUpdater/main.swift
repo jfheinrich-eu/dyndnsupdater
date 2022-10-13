@@ -7,5 +7,16 @@
 
 import Foundation
 
-print("Hello, World!")
 
+
+signal(SIGINT) {
+    theSignal in
+    Updater().writeToStderr("application interrupted -- halting")
+        exit(EXIT_FAILURE)
+}
+
+let updater = Updater()
+
+var result = updater.update()
+
+exit(EXIT_SUCCESS)
