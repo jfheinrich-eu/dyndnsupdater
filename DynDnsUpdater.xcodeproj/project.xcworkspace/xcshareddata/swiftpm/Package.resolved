@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jfheinrich-eu/dynDnsUpdaterLibrary.git",
       "state" : {
-        "revision" : "aa533ae8734be94c3597ca2c00b46de8f6f0515d",
-        "version" : "1.0.0"
+        "revision" : "86375cd4e61c367011ca2f0595a0ae2dbc260af4",
+        "version" : "1.1.1"
       }
     }
   ],

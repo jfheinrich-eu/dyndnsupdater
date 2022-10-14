@@ -7,22 +7,28 @@
 //
 
 import SwiftUI
+import DynDnsUpdaterLibrary
+
+func update()->String {
+    var updater = DynDnsUpdaterLib(forIsCli: false)
+    
+    _ = updater.update()
+    
+    return updater.response
+}
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            HStack {
-                Button("Hello") {
-                    _ = Alert(title: Text("Hallo"))
-                }
+        HStack {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                
+                Text(update())
             }
             .padding()
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
         }
-        .padding()
     }
 }
 

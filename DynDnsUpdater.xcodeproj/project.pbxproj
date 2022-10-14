@@ -15,6 +15,7 @@
 		CB07E31928F5B70A000D907E /* DynDnsUpdaterUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07E31828F5B70A000D907E /* DynDnsUpdaterUIUITests.swift */; };
 		CB07E31B28F5B70A000D907E /* DynDnsUpdaterUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07E31A28F5B70A000D907E /* DynDnsUpdaterUIUITestsLaunchTests.swift */; };
 		CB6CD47628F99F4700744FF9 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB6CD47528F99F4700744FF9 /* DynDnsUpdaterLibrary */; };
+		CB6CD47928F9B77400744FF9 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB6CD47828F9B77400744FF9 /* DynDnsUpdaterLibrary */; };
 		CB7988F928F487E10035F186 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7988F828F487E10035F186 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB6CD47928F9B77400744FF9 /* DynDnsUpdaterLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +143,13 @@
 			path = DynDnsUpdaterUIUITests;
 			sourceTree = "<group>";
 		};
+		CB6CD47728F9B77400744FF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB7988EC28F487E10035F186 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +158,7 @@
 				CB07E30D28F5B70A000D907E /* DynDnsUpdaterUITests */,
 				CB07E31728F5B70A000D907E /* DynDnsUpdaterUIUITests */,
 				CB7988F628F487E10035F186 /* Products */,
+				CB6CD47728F9B77400744FF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +208,9 @@
 			dependencies = (
 			);
 			name = DynDnsUpdaterUI;
+			packageProductDependencies = (
+				CB6CD47828F9B77400744FF9 /* DynDnsUpdaterLibrary */,
+			);
 			productName = DynDnsUpdaterUI;
 			productReference = CB07E2FA28F5B709000D907E /* DynDnsUpdaterUI.app */;
 			productType = "com.apple.product-type.application";
@@ -429,6 +442,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 jfheinrich.eu. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +470,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 jfheinrich.eu. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -767,14 +782,19 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jfheinrich-eu/dynDnsUpdaterLibrary.git";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		CB6CD47528F99F4700744FF9 /* DynDnsUpdaterLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB6CD47428F99F4700744FF9 /* XCRemoteSwiftPackageReference "dynDnsUpdaterLibrary" */;
+			productName = DynDnsUpdaterLibrary;
+		};
+		CB6CD47828F9B77400744FF9 /* DynDnsUpdaterLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CB6CD47428F99F4700744FF9 /* XCRemoteSwiftPackageReference "dynDnsUpdaterLibrary" */;
 			productName = DynDnsUpdaterLibrary;
