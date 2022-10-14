@@ -16,8 +16,6 @@
 		CB07E31B28F5B70A000D907E /* DynDnsUpdaterUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07E31A28F5B70A000D907E /* DynDnsUpdaterUIUITestsLaunchTests.swift */; };
 		CB6CD47628F99F4700744FF9 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB6CD47528F99F4700744FF9 /* DynDnsUpdaterLibrary */; };
 		CB7988F928F487E10035F186 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7988F828F487E10035F186 /* main.swift */; };
-		CBAA781B28F52FAE003A43BB /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA781A28F52FAE003A43BB /* Output.swift */; };
-		CBAA781D28F52FDD003A43BB /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAA781C28F52FDD003A43BB /* Updater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +62,6 @@
 		CB7988F528F487E10035F186 /* DynDnsUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynDnsUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7988F828F487E10035F186 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CB80656928F87679008A9A92 /* libDynDnsUpdaterLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDynDnsUpdaterLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBAA781A28F52FAE003A43BB /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
-		CBAA781C28F52FDD003A43BB /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				CB7988F828F487E10035F186 /* main.swift */,
-				CBAA781A28F52FAE003A43BB /* Output.swift */,
-				CBAA781C28F52FDD003A43BB /* Updater.swift */,
 			);
 			path = DynDnsUpdater;
 			sourceTree = "<group>";
@@ -394,9 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAA781B28F52FAE003A43BB /* Output.swift in Sources */,
 				CB7988F928F487E10035F186 /* main.swift in Sources */,
-				CBAA781D28F52FDD003A43BB /* Updater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
