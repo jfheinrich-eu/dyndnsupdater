@@ -7,15 +7,16 @@
 
 import Foundation
 
+import DynDnsUpdaterLibrary
 
+var updater = DynDnsUpdaterLib(forIsCli: true)
 
 signal(SIGINT) {
     theSignal in
-    Updater().writeToStderr("application interrupted -- halting")
+    updater.writeToStderr("application interrupted -- halting")
         exit(EXIT_FAILURE)
 }
 
-let updater = Updater()
 
 var result = updater.update()
 
