@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "dyndnsupdaterlibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jfheinrich-eu/dynDnsUpdaterLibrary.git",
+      "state" : {
+        "revision" : "aa533ae8734be94c3597ca2c00b46de8f6f0515d",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
