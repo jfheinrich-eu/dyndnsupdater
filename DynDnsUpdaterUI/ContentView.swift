@@ -25,7 +25,7 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
                 
-                Text(update())
+                Text("Inner View")
             }
             .padding()
         }
