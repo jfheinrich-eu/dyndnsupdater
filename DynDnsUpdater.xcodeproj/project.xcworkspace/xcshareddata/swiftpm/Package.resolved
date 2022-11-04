@@ -3,7 +3,7 @@
     {
       "identity" : "dyndnsupdaterlibrary",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jfheinrich-eu/dynDnsUpdaterLibrary.git",
+      "location" : "https://gitlab.com/jfheinrich-eu/dyndnsupdaterlibrary.git",
       "state" : {
         "revision" : "86375cd4e61c367011ca2f0595a0ae2dbc260af4",
         "version" : "1.1.1"
