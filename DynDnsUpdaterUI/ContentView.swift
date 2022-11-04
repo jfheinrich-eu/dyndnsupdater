@@ -9,11 +9,11 @@
 import SwiftUI
 import DynDnsUpdaterLibrary
 
-func update()->String {
+func update() -> String {
     var updater = DynDnsUpdaterLib(forIsCli: false)
-    
+
     _ = updater.update()
-    
+
     return updater.response
 }
 
@@ -24,7 +24,7 @@ struct ContentView: View {
                 Image(systemName: "globe")
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
-                
+
                 Text("Inner View")
             }
             .padding()

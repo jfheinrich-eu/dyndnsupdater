@@ -15,6 +15,8 @@
 		CB07E31928F5B70A000D907E /* DynDnsUpdaterUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07E31828F5B70A000D907E /* DynDnsUpdaterUIUITests.swift */; };
 		CB07E31B28F5B70A000D907E /* DynDnsUpdaterUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB07E31A28F5B70A000D907E /* DynDnsUpdaterUIUITestsLaunchTests.swift */; };
 		CB2898E428FBC97D00CAB8D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2898E328FBC97D00CAB8D1 /* AppDelegate.swift */; };
+		CB321E982915537E00CF30F3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB321E972915537E00CF30F3 /* MenuView.swift */; };
+		CB321E9A2915550F00CF30F3 /* MacExtrasConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB321E992915550F00CF30F3 /* MacExtrasConfigurator.swift */; };
 		CB6CD47628F99F4700744FF9 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB6CD47528F99F4700744FF9 /* DynDnsUpdaterLibrary */; };
 		CB6CD47928F9B77400744FF9 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB6CD47828F9B77400744FF9 /* DynDnsUpdaterLibrary */; };
 		CB7988F928F487E10035F186 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7988F828F487E10035F186 /* main.swift */; };
@@ -62,6 +64,9 @@
 		CB07E31828F5B70A000D907E /* DynDnsUpdaterUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynDnsUpdaterUIUITests.swift; sourceTree = "<group>"; };
 		CB07E31A28F5B70A000D907E /* DynDnsUpdaterUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynDnsUpdaterUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB2898E328FBC97D00CAB8D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB321E96291551E600CF30F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CB321E972915537E00CF30F3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CB321E992915550F00CF30F3 /* MacExtrasConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacExtrasConfigurator.swift; sourceTree = "<group>"; };
 		CB7988F528F487E10035F186 /* DynDnsUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynDnsUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7988F828F487E10035F186 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CB80656928F87679008A9A92 /* libDynDnsUpdaterLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDynDnsUpdaterLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,12 +116,15 @@
 		CB07E2FB28F5B709000D907E /* DynDnsUpdaterUI */ = {
 			isa = PBXGroup;
 			children = (
+				CB321E96291551E600CF30F3 /* Info.plist */,
 				CB07E2FC28F5B709000D907E /* DynDnsUpdaterUIApp.swift */,
 				CB07E2FE28F5B709000D907E /* ContentView.swift */,
 				CB07E30028F5B70A000D907E /* Assets.xcassets */,
 				CB07E30528F5B70A000D907E /* DynDnsUpdaterUI.entitlements */,
 				CB07E30228F5B70A000D907E /* Preview Content */,
 				CB2898E328FBC97D00CAB8D1 /* AppDelegate.swift */,
+				CB321E972915537E00CF30F3 /* MenuView.swift */,
+				CB321E992915550F00CF30F3 /* MacExtrasConfigurator.swift */,
 			);
 			path = DynDnsUpdaterUI;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 				CB07E2F628F5B709000D907E /* Sources */,
 				CB07E2F728F5B709000D907E /* Frameworks */,
 				CB07E2F828F5B709000D907E /* Resources */,
+				CBE491EB28FC856B0086F15F /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -373,12 +382,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CBE491EB28FC856B0086F15F /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/swiftlint.log",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"/opt/homebrew/bin/swiftlint\" DynDnsUpdaterUI\n\"/opt/homebrew/bin/swiftlint\" --fix DynDnsUpdaterUI\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB07E2F628F5B709000D907E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CB2898E428FBC97D00CAB8D1 /* AppDelegate.swift in Sources */,
+				CB321E982915537E00CF30F3 /* MenuView.swift in Sources */,
+				CB321E9A2915550F00CF30F3 /* MacExtrasConfigurator.swift in Sources */,
 				CB07E2FF28F5B709000D907E /* ContentView.swift in Sources */,
 				CB07E2FD28F5B709000D907E /* DynDnsUpdaterUIApp.swift in Sources */,
 			);
@@ -446,6 +479,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynDnsUpdaterUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DynDnsUpdater;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 jfheinrich.eu. All rights reserved.";
@@ -475,6 +509,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynDnsUpdaterUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DynDnsUpdater;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 jfheinrich.eu. All rights reserved.";
