@@ -17,8 +17,8 @@
 		CB2898E428FBC97D00CAB8D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2898E328FBC97D00CAB8D1 /* AppDelegate.swift */; };
 		CB321E982915537E00CF30F3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB321E972915537E00CF30F3 /* MenuView.swift */; };
 		CB321E9A2915550F00CF30F3 /* MacExtrasConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB321E992915550F00CF30F3 /* MacExtrasConfigurator.swift */; };
-		CB321E9D29155C5500CF30F3 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB321E9C29155C5500CF30F3 /* DynDnsUpdaterLibrary */; };
-		CB321E9F29155CFC00CF30F3 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB321E9E29155CFC00CF30F3 /* DynDnsUpdaterLibrary */; };
+		CB321EA2291561D400CF30F3 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB321EA1291561D400CF30F3 /* DynDnsUpdaterLibrary */; };
+		CB321EA4291562CA00CF30F3 /* DynDnsUpdaterLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CB321EA3291562CA00CF30F3 /* DynDnsUpdaterLibrary */; };
 		CB7988F928F487E10035F186 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7988F828F487E10035F186 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB321E9F29155CFC00CF30F3 /* DynDnsUpdaterLibrary in Frameworks */,
+				CB321EA4291562CA00CF30F3 /* DynDnsUpdaterLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB321E9D29155C5500CF30F3 /* DynDnsUpdaterLibrary in Frameworks */,
+				CB321EA2291561D400CF30F3 /* DynDnsUpdaterLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +221,7 @@
 			);
 			name = DynDnsUpdaterUI;
 			packageProductDependencies = (
-				CB321E9E29155CFC00CF30F3 /* DynDnsUpdaterLibrary */,
+				CB321EA3291562CA00CF30F3 /* DynDnsUpdaterLibrary */,
 			);
 			productName = DynDnsUpdaterUI;
 			productReference = CB07E2FA28F5B709000D907E /* DynDnsUpdaterUI.app */;
@@ -277,7 +277,7 @@
 			);
 			name = DynDnsUpdater;
 			packageProductDependencies = (
-				CB321E9C29155C5500CF30F3 /* DynDnsUpdaterLibrary */,
+				CB321EA1291561D400CF30F3 /* DynDnsUpdaterLibrary */,
 			);
 			productName = DynDnsUpdater;
 			productReference = CB7988F528F487E10035F186 /* DynDnsUpdater */;
@@ -341,7 +341,7 @@
 			);
 			mainGroup = CB7988EC28F487E10035F186;
 			packageReferences = (
-				CB321E9B29155C5500CF30F3 /* XCRemoteSwiftPackageReference "dyndnsupdaterlibrary" */,
+				CB321EA0291561D400CF30F3 /* XCRemoteSwiftPackageReference "dyndnsupdaterlibrary" */,
 			);
 			productRefGroup = CB7988F628F487E10035F186 /* Products */;
 			projectDirPath = "";
@@ -837,9 +837,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CB321E9B29155C5500CF30F3 /* XCRemoteSwiftPackageReference "dyndnsupdaterlibrary" */ = {
+		CB321EA0291561D400CF30F3 /* XCRemoteSwiftPackageReference "dyndnsupdaterlibrary" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://gitlab.com/jfheinrich-eu/dyndnsupdaterlibrary.git";
+			repositoryURL = "git@gitlab.com:jfheinrich-eu/dyndnsupdaterlibrary.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -848,14 +848,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CB321E9C29155C5500CF30F3 /* DynDnsUpdaterLibrary */ = {
+		CB321EA1291561D400CF30F3 /* DynDnsUpdaterLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB321E9B29155C5500CF30F3 /* XCRemoteSwiftPackageReference "dyndnsupdaterlibrary" */;
+			package = CB321EA0291561D400CF30F3 /* XCRemoteSwiftPackageReference "dyndnsupdaterlibrary" */;
 			productName = DynDnsUpdaterLibrary;
 		};
-		CB321E9E29155CFC00CF30F3 /* DynDnsUpdaterLibrary */ = {
+		CB321EA3291562CA00CF30F3 /* DynDnsUpdaterLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB321E9B29155C5500CF30F3 /* XCRemoteSwiftPackageReference "dyndnsupdaterlibrary" */;
+			package = CB321EA0291561D400CF30F3 /* XCRemoteSwiftPackageReference "dyndnsupdaterlibrary" */;
 			productName = DynDnsUpdaterLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -12,7 +12,6 @@ import SwiftUI
 final class AppDelegate: NSObject, NSApplicationDelegate {
     private var menuExtrasConfigurator: MacExtrasConfigurator?
     
-    
     // MARK: NSApplicationDelegate
     
     func applicationDidFinishLaunching(_ notification: Notification) {
